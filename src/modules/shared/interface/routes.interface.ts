@@ -7,6 +7,5 @@ export interface Routes {
 }
 
 export interface RequestWithUser extends Request {
-  req: { created_at: Date; email: string; full_name: string; user_id: string; };
   user: IUser;
 }
