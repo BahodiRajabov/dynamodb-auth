@@ -1,0 +1,7 @@
+node_modules/
+uploads/
+.env
+package-lock.json/
+src/uploads/files/*
+src/uploads/images/*
+src/sequlize/queries/queries.sql
