@@ -1,10 +1,10 @@
 import * as nodemailer from "nodemailer";
 import { server } from "../../../config/conf";
 export default async function sendMessage(to: string, subject: string, text: string) {
-    const hostname: string = 'smtp.gmail.com'
-    const username: string = 'rbcoder12345@gmail.com'
-    const password: string = 'etrhmnupezdjmimp'
-
+    const hostname: string = server.gmailHostname
+    const username: string = server.gmailUsername
+    const password: string = server.gmailPassowrd
+    
     const transporter = nodemailer.createTransport({
         host: hostname,
         port: 465,
